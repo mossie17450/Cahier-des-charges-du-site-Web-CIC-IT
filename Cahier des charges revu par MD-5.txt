@@ -1,0 +1,142 @@
+Cahier des charges : recréation du site web du CIC-IT
+I- Présentation du projet : site web du CIC-IT de Bordeaux
+a- Introduction 
+L’objet du projet est de recréer le site web du CIC-IT de Bordeaux. 
+Le CIC-IT a fait faire un site web en 2011 par une agence web qui a fait faillite depuis.
+Nous ne possédons pas le mot de passe administrateur et il est donc impossible de faire la mise à jour du site.
+La première « refonte » s’est faite en suivant l’exemple de l’existant, autant que possible.
+Certaines fonctions sont non formulées* mais attendues par le « client » et donc ajoutées :
+Site bilingue, responsif, dynamique.
+b- Fonctionnalités ajoutées
+1- Site bilingue (anglais/français)
+Le CIC-IT est un service institutionnel à vocation scientifique. L’anglais est donc indispensable, c’est la langue scientifique.
+Le français est aussi indispensable : c’est notre identité et le site s’adresse entre autres, surtout aux industriels français.
+2- Site responsif
+L’évolution des écrans d’ordinateur est telle qu’il faut faire un site qui s’affiche aussi bien sur des grands écrans que sur des petits (tablettes), et des téléphones.
+3- Site dynamique
+L’avantage du site dynamique est de permettre la modification du contenu de certaines pages et le stockage d’informations. Ainsi, les mises à jour nécessaires du site seront moins fréquentes.
+Un espace intranet est développé pour permettre aux membres du CIC-IT du site d’afficher sur le site des informations intéressantes :
+- Publications/résultats
+- Evènements,
+- Poste ouvert ou/et stage,
+-  Gestion des contacts et candidatures spontanées.
+
+c- La sécurité
+La sécurité est indispensable.
+Le site contient deux formulaires (« candidature spontanée » et « contact ») auxquels nous devons empêcher des robots d’accéder, qui sinon satureraient la BD et rendraient impossible l’utilisation du formulaire par l’internaute.
+Pour la partie intranet : l’accès doit être réservé à certains membres du CIC-IT.
+Solutions mises en place (à mettre dans le cahier technique ou du développeur) :
+Le site est « https », autrement dit, toutes les données envoyées via ce site sont cryptées.
+ Qui plus est, les formulaires qui collectent des informations pouvant être sensibles intègrent un « catcha » qui interdit l’accès des formulaires aux robots.
+L’accès au site intranet est réservé et doublement contrôlé :
+ 1) par un login et mot de passe 
+2) adresse ip autorisée.
+L’accès n’est possible qu’au CIC-IT et aux personnes possédant le login et le mot de passe.
+d- Le suivi de la « qualité » ou statistiques
+Le suivi de la « qualité » fait partie de la politique du CIC-IT, elle est exigée par la direction.
+L’indicateur choisi/exigé par le responsable qualité est le nombre de visites par trimestre.
+Solutions mis en places (à mettre dans le cahier technique ou du développeur) :
+Toute les pages (hors intranet) sont suivies par « Google analytique » : outil sur internet gratuit.
+Le webmaster reçoit tous les jours un « compte-rendu » permettant d’évaluer la fréquentation du site (Nombres de nouvelles sessions (=nombre de nouveaux visiteurs), temps passé sur le site, …).
+Problème : le CHU de Bordeaux, qui nous héberge, refuse tout lien avec « Google ».
+=> Je reçois le compte-rendu sur mon adresse « INSERM ».
+Ce suivi nous permettra de savoir si le site atteint son objectif (plus de contacts/visites par trimestre).
+e- La charte graphique et images du site
+=> 3 critères principaux : homogénéiser, alléger et faciliter le rendu graphique (et donc le codage).
+=> s'inspirer d’un site web développé récemment (IHU Liryc ?)
+
+- Charte graphique :
+- toutes les pages :
+                - réduire et bloquer le format des pages (largeur), penser aux écrans 4/3 pour le choisir.
+                - ôter fond bleu, garder un fond blanc partout
+                - le bandeau de menu doit faire toute la largeur de la page  (compromis avec la taille de la police).
+                - mettre toujours les logos CHU, INSERM, Université de Bordeaux, Bergonié, en petit, en bas de page, sur une ligne
+                - ajouter l'onglet "Actualités" avant "Contact"
+                - ôter image DM en transparence
+                - maximum 3 présentations de page différentes : ex. page texte et ex. page activités
+                - organiser les pages pour qu'il y ait le moins de vide possible et pour que le seul "scrolling" à faire soit vertical
+                - mettre les photos des personnes en noir et blanc, c'est plus flatteur, à l'idéal elles sont prises avec le même angle
+                - mettre toutes les images à la même taille (préférer petite taille)
+                - utiliser outil CSS pour retailler les images à volonté (libre sur le net)
+- la première page mérite d'être valorisée :
+                - changer la police du menu : choix de Marlène.
+              
+                - écrire le titre dans le même bleu (+rouge de 2 mots) que le logo CIC IT de Bordeaux puisque le titre sera désormais sur fond blanc
+                - le bandeau de titre doit être plus petit
+                - remettre l'animation centrée, et au-dessous texte à droite et image à gauche
+
+
+
+f- Ligne éditoriale du site
+Pour conserver de bonnes relations avec les collaborateurs, hébergeur, tutelles et autres partenaires, le contenu doit être précis et exact (il montre ainsi le caractère scientifique du site). De nombreux liens « http » sont faits avec les partenaires. 
+
+Le choix des polices a été fait par Marlène le 18 Janvier 2018 :
+La police choisit est le « Century Gothic Normal », elle est validé Marlène après un test sur le site.
+                - 3 tailles max de cette police utilisées dans toutes les pages (la police des titres est bien trop grosse par rapport au texte à l’heure actuelle)
+Les taille choisit sont : 18 et gras (ou <H1><strong>) pour le titre*,
+14 pour le texte du menu (ou <h3>),
+12 pour le texte (ou <h6>).
+
+La police choisie est agréable et sérieuse. La ligne éditoriale doit refléter le sérieux des services proposés par le  CIC-IT.
+
+II- Présentation du service : le CIC-IT de Bordeaux
+Le site développé se doit de présenter de façon fidèle le CIC-IT de Bordeaux. Attention, pas d’erreurs ou d’imprécisions : le CIC-IT est un service « scientifique » et doit être exact et précis pour tout ce qu’il dit ou affiche.
+- Page d’accueil : première page visitée par l’internaute, image précise et succincte du CIC-IT de Bordeaux.
+- En tête qui se retrouve sur toutes les pages : donne l’intitulé exact du CIC-IT + logo du CIC-IT plus le réseau national CIC-IT.
+- La communication non verbale du site : logos des « partenaires/tutelles », photos de la PTIB qui héberge le CIC-IT de Bordeaux.
+- Nos coordonnées complètes sur la page « coordonnées ».
+- Nos activités : 
+a) Expertises techniques sur 8 pages dans la rubrique « activités /expertises » : le public visé est « les laboratoires académiques et les industriel porteurs d’un projet innovant de matériau implanté ».
+Remplacer sur ces pages « activité » ou le nom de l’expertise (exemple : « histologie » pour la page histologie) par un texte introductif qui fait le lien entre l’expertise (ou autre) et le CIC-IT comme sur la page index.
+Sur la page histologie : mettre un lien « Lionel Couraud, consultant et vétérinaire anathomopatologiste » qui nous envoie vers une page dédier à Lionel Coureau.
+b) Participation à l’enseignement page « master -BiDim» : le public visé est  « les étudiants. »
+c) Le CIC-IT souhaite afficher sa volonté de manager par la qualité  afin de convaincre les industriels de travailler avec lui. Les pages « organisation », « management du CIC-IT » et « système qualité » affichent très clairement ce positionnement stratégique.
+- Les partenaires et tutelles du CIC-IT : Chaque page du site contient les logos des partenaires et/ou tutelles du CIC-IT.  Même s’ils ne peuvent pas être considéré comme des « clients cible » du CIC-IT de Bordeaux et donc du site, ils sont cependant importants pour la pérennité du CIC-IT de Bordeaux. De bonnes relations avec eux sont aussi  complexes qu’indispensable.
+
+III-  Hébergement du site
+OVH, Pierre Deruelle
+a) Nom ou adresse du domaine :   https://dev.cic-it-bordeaux.fr
+b) Adresse email : non…
+c) Référencement : naturel.
+Caractéristiques techniques :
+Site développé par Cécile Raymond (DUT analyse, conception et développement des systèmes d’informations) en HTML/CSS/JS/PHP/mysql  en local avec « wamp-serveur » (sous windows 7) et à distance LAMP sous linux (apache/mysql/php).
+Développement à distance : avec « winSCP » pour la connexion sécurisé au serveur distant, « notepad » pour l’édition de code. GIMP pour la modification des images.
+Les bases de données sont en mysql, et gerer via « phpmysql »à distance.
+ Le code du site est déposé sur GITHub (gestionnaire de version).
+
+III Rôles dans la création du site
+Contenu du site : Apporté par les différents acteurs du CIC-IT (ils sont les experts en la matière, ce n’est pas le cas du webmaster) et validé par chacun d’entre eux.
+Arborescence et navigation du site : Voir page « sitemap »
+Mise à jour du site, après la mise en ligne (ou production) : tous les deux mois, Nettoyage des BD, corrections éventuelles du site, mise à jour des solutions logicielles utilisées (php, js, etc…)
+
+IV Livrables
+1) Arborescence du site : https://dev.cic-it-bordeaux.fr/html/sitemap.php
+2) Planning de réalisation avec échéances et mise en ligne du site : voir tableau des livrables avec échéances.
+A la fin : mise en ligne du site.
+Exemple :
+livrableDate de livraisonVérification/validationPage index (première page du site) en françaisfaitDate ou OK ou demande de correctionsPage index (première page du site) en anglaisA faireAttendre AgungCompatibilité IE
+Fichier attendus de la part du client (coordonnateur délégué CIC IT) :
+- Le contenu des pages. OK 
+- Reprendre l’existant puis mettre à jour, voir réorganiser complément les pages.
+- Pages réorganisées : organisation/management et organisation/qualité, pages de l’onglet activités. Histologie. Evenements.
+- Fournir le Texte, les images, les logos. (si possible).
+- Page évènements : nouvelle page, faire le contenu littéraire.
+- Liste des stagiaires (voir page « offre de stages »), liste des CDD. A discuter
+- Choix des polices. OK
+
+3) Les fichiers informatiques : voir github.
+
+4) Cahier des charges fonctionnel : à faire.
+
+5) Langages utilisés : HTML5, CSS3, js (jquery), php 7.10
+
+6) Navigateurs compatibles : Firefox, Chrome, Internet Explorer, Safari sous Mac.
+
+7) Login et mot de passe : ce n’est pas un CMS.
+
+
+
+
+1
+Rédigé par C Raymond le 08/01/2018
+
