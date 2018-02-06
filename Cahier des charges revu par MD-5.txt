@@ -1,142 +1,156 @@
-Cahier des charges : recréation du site web du CIC-IT
-I- Présentation du projet : site web du CIC-IT de Bordeaux
-a- Introduction 
-L’objet du projet est de recréer le site web du CIC-IT de Bordeaux. 
-Le CIC-IT a fait faire un site web en 2011 par une agence web qui a fait faillite depuis.
-Nous ne possédons pas le mot de passe administrateur et il est donc impossible de faire la mise à jour du site.
-La première « refonte » s’est faite en suivant l’exemple de l’existant, autant que possible.
-Certaines fonctions sont non formulées* mais attendues par le « client » et donc ajoutées :
-Site bilingue, responsif, dynamique.
-b- Fonctionnalités ajoutées
-1- Site bilingue (anglais/français)
-Le CIC-IT est un service institutionnel à vocation scientifique. L’anglais est donc indispensable, c’est la langue scientifique.
-Le français est aussi indispensable : c’est notre identité et le site s’adresse entre autres, surtout aux industriels français.
-2- Site responsif
-L’évolution des écrans d’ordinateur est telle qu’il faut faire un site qui s’affiche aussi bien sur des grands écrans que sur des petits (tablettes), et des téléphones.
-3- Site dynamique
-L’avantage du site dynamique est de permettre la modification du contenu de certaines pages et le stockage d’informations. Ainsi, les mises à jour nécessaires du site seront moins fréquentes.
-Un espace intranet est développé pour permettre aux membres du CIC-IT du site d’afficher sur le site des informations intéressantes :
-- Publications/résultats
-- Evènements,
-- Poste ouvert ou/et stage,
--  Gestion des contacts et candidatures spontanées.
+Cahier des chargesÂ : recrÃ©ation du site web du CIC-IT
 
-c- La sécurité
-La sécurité est indispensable.
-Le site contient deux formulaires (« candidature spontanée » et « contact ») auxquels nous devons empêcher des robots d’accéder, qui sinon satureraient la BD et rendraient impossible l’utilisation du formulaire par l’internaute.
-Pour la partie intranet : l’accès doit être réservé à certains membres du CIC-IT.
-Solutions mises en place (à mettre dans le cahier technique ou du développeur) :
-Le site est « https », autrement dit, toutes les données envoyées via ce site sont cryptées.
- Qui plus est, les formulaires qui collectent des informations pouvant être sensibles intègrent un « catcha » qui interdit l’accès des formulaires aux robots.
-L’accès au site intranet est réservé et doublement contrôlé :
+I- PrÃ©sentation du projet : site web du CIC-IT de Bordeaux
+a- IntroductionÂ 
+Lâ€™objet du projet est de recrÃ©er le site web du CIC-IT de Bordeaux. 
+Le CIC-IT a fait faire un site web en 2011 par une agence web qui a fait faillite depuis.
+Nous ne possÃ©dons pas le mot de passe administrateur et il est donc impossible de faire la mise Ã  jour du site.
+La premiÃ¨re Â«Â refonteÂ Â» sâ€™est faite en suivant lâ€™exemple de lâ€™existant, autant que possible.
+Certaines fonctions sont non formulÃ©es* mais attendues par le Â«Â clientÂ Â» et donc ajoutÃ©esÂ :
+Site bilingue, responsif, dynamique.
+b- FonctionnalitÃ©s ajoutÃ©es
+1- Site bilingue (anglais/franÃ§ais)
+Le CIC-IT est un service institutionnel Ã  vocation scientifique. Lâ€™anglais est donc indispensable, câ€™est la langue scientifique.
+Le franÃ§ais est aussi indispensableÂ : câ€™est notre identitÃ© et le site sâ€™adresse entre autres, surtout aux industriels franÃ§ais.
+2- Site responsif
+Lâ€™Ã©volution des Ã©crans dâ€™ordinateur est telle quâ€™il faut faire un site qui sâ€™affiche aussi bien sur des grands Ã©crans que sur des petits (tablettes), et des tÃ©lÃ©phones.
+3- Site dynamique
+Lâ€™avantage du site dynamique est de permettre la modification du contenu de certaines pages et le stockage dâ€™informations. Ainsi, les mises Ã  jour nÃ©cessaires du site seront moins frÃ©quentes.
+Un espace intranet est dÃ©veloppÃ© pour permettre aux membres du CIC-IT du site dâ€™afficher sur le site des informations intÃ©ressantesÂ :
+- Publications/rÃ©sultats
+- EvÃ¨nements,
+- Poste ouvert ou/et stage,
+-  Gestion des contacts et candidatures spontanÃ©es.
+
+c- La sÃ©curitÃ©
+La sÃ©curitÃ© est indispensable.
+Le site contient deux formulaires (Â«Â candidature spontanÃ©eÂ Â» et Â«Â contactÂ Â») auxquels nous devons empÃªcher des robots dâ€™accÃ©der, qui sinon satureraient la BD et rendraient impossible lâ€™utilisation du formulaire par lâ€™internaute.
+Pour la partie intranetÂ : lâ€™accÃ¨s doit Ãªtre rÃ©servÃ© Ã  certains membres du CIC-IT.
+Solutions mises en place (Ã  mettre dans le cahier technique ou du dÃ©veloppeur)Â :
+Le site est Â«Â httpsÂ Â», autrement dit, toutes les donnÃ©es envoyÃ©es via ce site sont cryptÃ©es.
+ Qui plus est, les formulaires qui collectent des informations pouvant Ãªtre sensibles intÃ¨grent un Â«Â catchaÂ Â» qui interdit lâ€™accÃ¨s des formulaires aux robots.
+Lâ€™accÃ¨s au site intranet est rÃ©servÃ© et doublement contrÃ´lÃ©Â :
  1) par un login et mot de passe 
-2) adresse ip autorisée.
-L’accès n’est possible qu’au CIC-IT et aux personnes possédant le login et le mot de passe.
-d- Le suivi de la « qualité » ou statistiques
-Le suivi de la « qualité » fait partie de la politique du CIC-IT, elle est exigée par la direction.
-L’indicateur choisi/exigé par le responsable qualité est le nombre de visites par trimestre.
-Solutions mis en places (à mettre dans le cahier technique ou du développeur) :
-Toute les pages (hors intranet) sont suivies par « Google analytique » : outil sur internet gratuit.
-Le webmaster reçoit tous les jours un « compte-rendu » permettant d’évaluer la fréquentation du site (Nombres de nouvelles sessions (=nombre de nouveaux visiteurs), temps passé sur le site, …).
-Problème : le CHU de Bordeaux, qui nous héberge, refuse tout lien avec « Google ».
-=> Je reçois le compte-rendu sur mon adresse « INSERM ».
+2) adresse ip autorisÃ©e.
+Lâ€™accÃ¨s nâ€™est possible quâ€™au CIC-IT et aux personnes possÃ©dant le login et le mot de passe.
+d- Le suivi de la Â«Â qualitÃ©Â Â» ou statistiques
+Le suivi de la Â«Â qualitÃ©Â Â» fait partie de la politique du CIC-IT, elle est exigÃ©e par la direction.
+Lâ€™indicateur choisi/exigÃ© par le responsable qualitÃ© est le nombre de visites par trimestre.
+Solutions mis en places (Ã  mettre dans le cahier technique ou du dÃ©veloppeur)Â :
+Toute les pages (hors intranet) sont suivies par Â«Â Google analytiqueÂ Â»Â : outil sur internet gratuit.
+Le webmaster reÃ§oit tous les jours un Â«Â compte-renduÂ Â» permettant dâ€™Ã©valuer la frÃ©quentation du site (Nombres de nouvelles sessions (=nombre de nouveaux visiteurs), temps passÃ© sur le site, â€¦).
+ProblÃ¨meÂ : le CHU de Bordeaux, qui nous hÃ©berge, refuse tout lien avec Â«Â GoogleÂ Â».
+=> Je reÃ§ois le compte-rendu sur mon adresse Â«Â INSERMÂ Â».
 Ce suivi nous permettra de savoir si le site atteint son objectif (plus de contacts/visites par trimestre).
 e- La charte graphique et images du site
-=> 3 critères principaux : homogénéiser, alléger et faciliter le rendu graphique (et donc le codage).
-=> s'inspirer d’un site web développé récemment (IHU Liryc ?)
+=> 3 critÃ¨res principaux : homogÃ©nÃ©iser, allÃ©ger et faciliter le rendu graphique (et donc le codage).
+=> s'inspirer dâ€™un site web dÃ©veloppÃ© rÃ©cemment (IHU LirycÂ ?)
 
-- Charte graphique :
+- Charte graphiqueÂ :
 - toutes les pages :
-                - réduire et bloquer le format des pages (largeur), penser aux écrans 4/3 pour le choisir.
-                - ôter fond bleu, garder un fond blanc partout
-                - le bandeau de menu doit faire toute la largeur de la page  (compromis avec la taille de la police).
-                - mettre toujours les logos CHU, INSERM, Université de Bordeaux, Bergonié, en petit, en bas de page, sur une ligne
-                - ajouter l'onglet "Actualités" avant "Contact"
-                - ôter image DM en transparence
-                - maximum 3 présentations de page différentes : ex. page texte et ex. page activités
-                - organiser les pages pour qu'il y ait le moins de vide possible et pour que le seul "scrolling" à faire soit vertical
-                - mettre les photos des personnes en noir et blanc, c'est plus flatteur, à l'idéal elles sont prises avec le même angle
-                - mettre toutes les images à la même taille (préférer petite taille)
-                - utiliser outil CSS pour retailler les images à volonté (libre sur le net)
-- la première page mérite d'être valorisée :
-                - changer la police du menu : choix de Marlène.
-              
-                - écrire le titre dans le même bleu (+rouge de 2 mots) que le logo CIC IT de Bordeaux puisque le titre sera désormais sur fond blanc
-                - le bandeau de titre doit être plus petit
-                - remettre l'animation centrée, et au-dessous texte à droite et image à gauche
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - rÃ©duire et bloquer le format des pages (largeur), penser aux Ã©crans 4/3 pour le choisir.
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - Ã´ter fond bleu, garder un fond blanc partout
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - le bandeau de menu doit faire toute la largeur de la page  (compromis avec la taille de la police).
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - mettre toujours les logos CHU, INSERM, UniversitÃ© de Bordeaux, BergoniÃ©, en petit, en bas de page, sur une ligne
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - ajouter l'onglet "ActualitÃ©s" avant "Contact"
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - Ã´ter image DM en transparence
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - maximum 3 prÃ©sentations de page diffÃ©rentes : ex. page texte et ex. page activitÃ©s
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - organiser les pages pour qu'il y ait le moins de vide possible et pour que le seul "scrolling" Ã  faire soit vertical
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - mettre les photos des personnes en noir et blanc, c'est plus flatteur, Ã  l'idÃ©al elles sont prises avec le mÃªme angle
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - mettre toutes les images Ã  la mÃªme taille (prÃ©fÃ©rer petite taille)
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - utiliser outil CSS pour retailler les images Ã  volontÃ© (libre sur le net)
+- la premiÃ¨re page mÃ©rite d'Ãªtre valorisÃ©e :
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - changer la police du menuÂ : choix de MarlÃ¨ne.
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â 
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - Ã©crire le titre dans le mÃªme bleu (+rouge de 2 mots) que le logo CIC IT de Bordeaux puisque le titre sera dÃ©sormais sur fond blanc
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - le bandeau de titre doit Ãªtre plus petit
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - remettre l'animation centrÃ©e, et au-dessous texte Ã  droite et image Ã  gauche
 
 
 
-f- Ligne éditoriale du site
-Pour conserver de bonnes relations avec les collaborateurs, hébergeur, tutelles et autres partenaires, le contenu doit être précis et exact (il montre ainsi le caractère scientifique du site). De nombreux liens « http » sont faits avec les partenaires. 
+f- Ligne Ã©ditoriale du site
+Pour conserver de bonnes relations avec les collaborateurs, hÃ©bergeur, tutelles et autres partenaires, le contenu doit Ãªtre prÃ©cis et exact (il montre ainsi le caractÃ¨re scientifique du site). De nombreux liens Â«Â httpÂ Â» sont faits avec les partenaires. 
 
-Le choix des polices a été fait par Marlène le 18 Janvier 2018 :
-La police choisit est le « Century Gothic Normal », elle est validé Marlène après un test sur le site.
-                - 3 tailles max de cette police utilisées dans toutes les pages (la police des titres est bien trop grosse par rapport au texte à l’heure actuelle)
-Les taille choisit sont : 18 et gras (ou <H1><strong>) pour le titre*,
+Le choix des polices a Ã©tÃ© fait par MarlÃ¨ne le 18 Janvier 2018Â :
+La police choisit est le Â«Â Century Gothic NormalÂ Â», elle est validÃ© MarlÃ¨ne aprÃ¨s un test sur le site.
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  - 3 tailles max de cette police utilisÃ©es dans toutes les pages (la police des titres est bien trop grosse par rapport au texte Ã  lâ€™heure actuelle)
+Les taille choisit sontÂ : 18 et gras (ou <H1><strong>) pour le titre*,
 14 pour le texte du menu (ou <h3>),
 12 pour le texte (ou <h6>).
 
-La police choisie est agréable et sérieuse. La ligne éditoriale doit refléter le sérieux des services proposés par le  CIC-IT.
+La police choisie est agrÃ©able et sÃ©rieuse. La ligne Ã©ditoriale doit reflÃ©ter le sÃ©rieux des services proposÃ©s par le  CIC-IT.
 
-II- Présentation du service : le CIC-IT de Bordeaux
-Le site développé se doit de présenter de façon fidèle le CIC-IT de Bordeaux. Attention, pas d’erreurs ou d’imprécisions : le CIC-IT est un service « scientifique » et doit être exact et précis pour tout ce qu’il dit ou affiche.
-- Page d’accueil : première page visitée par l’internaute, image précise et succincte du CIC-IT de Bordeaux.
-- En tête qui se retrouve sur toutes les pages : donne l’intitulé exact du CIC-IT + logo du CIC-IT plus le réseau national CIC-IT.
-- La communication non verbale du site : logos des « partenaires/tutelles », photos de la PTIB qui héberge le CIC-IT de Bordeaux.
-- Nos coordonnées complètes sur la page « coordonnées ».
-- Nos activités : 
-a) Expertises techniques sur 8 pages dans la rubrique « activités /expertises » : le public visé est « les laboratoires académiques et les industriel porteurs d’un projet innovant de matériau implanté ».
-Remplacer sur ces pages « activité » ou le nom de l’expertise (exemple : « histologie » pour la page histologie) par un texte introductif qui fait le lien entre l’expertise (ou autre) et le CIC-IT comme sur la page index.
-Sur la page histologie : mettre un lien « Lionel Couraud, consultant et vétérinaire anathomopatologiste » qui nous envoie vers une page dédier à Lionel Coureau.
-b) Participation à l’enseignement page « master -BiDim» : le public visé est  « les étudiants. »
-c) Le CIC-IT souhaite afficher sa volonté de manager par la qualité  afin de convaincre les industriels de travailler avec lui. Les pages « organisation », « management du CIC-IT » et « système qualité » affichent très clairement ce positionnement stratégique.
-- Les partenaires et tutelles du CIC-IT : Chaque page du site contient les logos des partenaires et/ou tutelles du CIC-IT.  Même s’ils ne peuvent pas être considéré comme des « clients cible » du CIC-IT de Bordeaux et donc du site, ils sont cependant importants pour la pérennité du CIC-IT de Bordeaux. De bonnes relations avec eux sont aussi  complexes qu’indispensable.
+II- PrÃ©sentation du serviceÂ : le CIC-IT de Bordeaux
+Le site dÃ©veloppÃ© se doit de prÃ©senter de faÃ§on fidÃ¨le le CIC-IT de Bordeaux. Attention, pas dâ€™erreurs ou dâ€™imprÃ©cisionsÂ : le CIC-IT est un service Â«Â scientifiqueÂ Â» et doit Ãªtre exact et prÃ©cis pour tout ce quâ€™il dit ou affiche.
+- Page dâ€™accueilÂ : premiÃ¨re page visitÃ©e par lâ€™internaute, image prÃ©cise et succincte du CIC-IT de Bordeaux.
+- En tÃªte qui se retrouve sur toutes les pagesÂ : donne lâ€™intitulÃ© exact du CIC-IT + logo du CIC-IT plus le rÃ©seau national CIC-IT.
+- La communication non verbale du siteÂ : logos des Â«Â partenaires/tutellesÂ Â», photos de la PTIB qui hÃ©berge le CIC-IT de Bordeaux.
+- Nos coordonnÃ©es complÃ¨tes sur la page Â«Â coordonnÃ©esÂ Â».
+- Nos activitÃ©sÂ : 
+a) Expertises techniques sur 8 pages dans la rubrique Â«Â activitÃ©s /expertisesÂ Â»Â : le public visÃ© est Â«Â les laboratoires acadÃ©miques et les industriel porteurs dâ€™un projet innovant de matÃ©riau implantÃ©Â Â».
+Remplacer sur ces pages Â«Â activitÃ©Â Â» ou le nom de lâ€™expertise (exempleÂ : Â«Â histologieÂ Â» pour la page histologie) par un texte introductif qui fait le lien entre lâ€™expertise (ou autre) et le CIC-IT comme sur la page index.
+Sur la page histologieÂ : mettre un lien Â«Â Lionel Couraud, consultant et vÃ©tÃ©rinaire anathomopatologisteÂ Â» qui nous envoie vers une page dÃ©dier Ã  Lionel Coureau.
+b) Participation Ã  lâ€™enseignement page Â«Â master -BiDimÂ»Â : le public visÃ© est  Â«Â les Ã©tudiants.Â Â»
+c) Le CIC-IT souhaite afficher sa volontÃ© de manager par la qualitÃ©Â  afin de convaincre les industriels de travailler avec lui. Les pages Â«Â organisationÂ Â»,Â Â«Â management du CIC-ITÂ Â» et Â«Â systÃ¨me qualitÃ©Â Â» affichent trÃ¨s clairement ce positionnement stratÃ©gique.
+- Les partenaires et tutelles du CIC-ITÂ : Chaque page du site contient les logos des partenaires et/ou tutelles du CIC-IT.  MÃªme sâ€™ils ne peuvent pas Ãªtre considÃ©rÃ© comme des Â«Â clients cibleÂ Â» du CIC-IT de Bordeaux et donc du site, ils sont cependant importants pour la pÃ©rennitÃ© du CIC-IT de Bordeaux. De bonnes relations avec eux sont aussi  complexes quâ€™indispensable.
 
-III-  Hébergement du site
+III-  HÃ©bergement du site
 OVH, Pierre Deruelle
-a) Nom ou adresse du domaine :   https://dev.cic-it-bordeaux.fr
-b) Adresse email : non…
-c) Référencement : naturel.
-Caractéristiques techniques :
-Site développé par Cécile Raymond (DUT analyse, conception et développement des systèmes d’informations) en HTML/CSS/JS/PHP/mysql  en local avec « wamp-serveur » (sous windows 7) et à distance LAMP sous linux (apache/mysql/php).
-Développement à distance : avec « winSCP » pour la connexion sécurisé au serveur distant, « notepad » pour l’édition de code. GIMP pour la modification des images.
-Les bases de données sont en mysql, et gerer via « phpmysql »à distance.
- Le code du site est déposé sur GITHub (gestionnaire de version).
+a) Nom ou adresse du domaineÂ :   https://dev.cic-it-bordeaux.fr
+b) Adresse emailÂ :Â nonâ€¦
+c) RÃ©fÃ©rencementÂ : naturel.
+CaractÃ©ristiques techniquesÂ :
+Site dÃ©veloppÃ© par CÃ©cile Raymond (DUT analyse, conception et dÃ©veloppement des systÃ¨mes dâ€™informations) en HTML/CSS/JS/PHP/mysql  en local avec Â«Â wamp-serveurÂ Â» (sous windows 7) et Ã  distance LAMP sous linux (apache/mysql/php).
+DÃ©veloppement Ã  distanceÂ : avec Â«Â winSCPÂ Â» pour la connexion sÃ©curisÃ© au serveur distant, Â«Â notepadÂ Â» pour lâ€™Ã©dition de code. GIMP pour la modification des images.
+Les bases de donnÃ©es sont en mysql, et gerer via Â«Â phpmysqlÂ Â»Ã  distance.
+ Le code du site est dÃ©posÃ© sur GITHub (gestionnaire de version).
 
-III Rôles dans la création du site
-Contenu du site : Apporté par les différents acteurs du CIC-IT (ils sont les experts en la matière, ce n’est pas le cas du webmaster) et validé par chacun d’entre eux.
-Arborescence et navigation du site : Voir page « sitemap »
-Mise à jour du site, après la mise en ligne (ou production) : tous les deux mois, Nettoyage des BD, corrections éventuelles du site, mise à jour des solutions logicielles utilisées (php, js, etc…)
+III RÃ´les dans la crÃ©ation du site
+Contenu du siteÂ : ApportÃ© par les diffÃ©rents acteurs du CIC-IT (ils sont les experts en la matiÃ¨re, ce nâ€™est pas le cas du webmaster) et validÃ© par chacun dâ€™entre eux.
+Arborescence et navigation du siteÂ : Voir page Â«Â sitemapÂ Â»
+Mise Ã  jour du site, aprÃ¨s la mise en ligne (ou production)Â : tous les deux mois, Nettoyage des BD, corrections Ã©ventuelles du site, mise Ã  jour des solutions logicielles utilisÃ©es (php, js, etcâ€¦)
 
 IV Livrables
-1) Arborescence du site : https://dev.cic-it-bordeaux.fr/html/sitemap.php
-2) Planning de réalisation avec échéances et mise en ligne du site : voir tableau des livrables avec échéances.
-A la fin : mise en ligne du site.
-Exemple :
-livrableDate de livraisonVérification/validationPage index (première page du site) en françaisfaitDate ou OK ou demande de correctionsPage index (première page du site) en anglaisA faireAttendre AgungCompatibilité IE
-Fichier attendus de la part du client (coordonnateur délégué CIC IT) :
+1) Arborescence du siteÂ : https://dev.cic-it-bordeaux.fr/html/sitemap.php
+2) Planning de rÃ©alisation avec Ã©chÃ©ances et mise en ligne du siteÂ : voir tableau des livrables avec Ã©chÃ©ances.
+A la finÂ : mise en ligne du site.
+ExempleÂ :
+livrable
+Date de livraison
+VÃ©rification/validation
+Page index (premiÃ¨re page du site) en franÃ§ais
+fait
+Date ou OK ou demande de corrections
+Page index (premiÃ¨re page du site) en anglais
+A faire
+Attendre Agung
+CompatibilitÃ© IE
+
+
+
+Fichier attendus de la part du client (coordonnateur dÃ©lÃ©guÃ© CIC IT)Â :
 - Le contenu des pages. OK 
-- Reprendre l’existant puis mettre à jour, voir réorganiser complément les pages.
-- Pages réorganisées : organisation/management et organisation/qualité, pages de l’onglet activités. Histologie. Evenements.
+- Reprendre lâ€™existant puis mettre Ã  jour, voir rÃ©organiser complÃ©ment les pages.
+- Pages rÃ©organisÃ©esÂ : organisation/management et organisation/qualitÃ©, pages de lâ€™onglet activitÃ©s. Histologie. Evenements.
 - Fournir le Texte, les images, les logos. (si possible).
-- Page évènements : nouvelle page, faire le contenu littéraire.
-- Liste des stagiaires (voir page « offre de stages »), liste des CDD. A discuter
+- Page Ã©vÃ¨nementsÂ : nouvelle page, faire le contenu littÃ©raire.
+- Liste des stagiaires (voir page Â«Â offre de stagesÂ Â»), liste des CDD. A discuter
 - Choix des polices. OK
 
-3) Les fichiers informatiques : voir github.
+3) Les fichiers informatiquesÂ : voir github.
 
-4) Cahier des charges fonctionnel : à faire.
+4) Cahier des charges fonctionnelÂ : Ã  faire.
 
-5) Langages utilisés : HTML5, CSS3, js (jquery), php 7.10
+5) Langages utilisÃ©s : HTML5, CSS3, js (jquery), phpÂ 7.10
 
-6) Navigateurs compatibles : Firefox, Chrome, Internet Explorer, Safari sous Mac.
+6) Navigateurs compatiblesÂ : Firefox, Chrome, Internet Explorer, Safari sous Mac.
 
-7) Login et mot de passe : ce n’est pas un CMS.
+7) Login et mot de passeÂ : ce nâ€™est pas un CMS.
 
 
 
 
 1
-Rédigé par C Raymond le 08/01/2018
+RÃ©digÃ© par C Raymond le 08/01/2018
+mise en format "txt" sur git-hub le 6 FÃ©vrier 2018
 
